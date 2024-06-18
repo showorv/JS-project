@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        .navbar{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: gray;
+}
+
+#heading{
+    background: linear-gradient(90deg, #ff3f3f,#f0b9b9e7);
+    background-clip: text;
+    
+}
+section{
+    padding: 30px 100px;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+#time{
+    width: 200px;
+    height: 50px;
+    color: black;
+    border: 2px solid yellow;
+    background: yellow;
+    border-radius: 12px;
+    /* margin: 106px 829px; */
+    font-size: 30px;
+    
+    
+}
+    </style>
+</head>
+<body >
+    <nav class="navbar">
+        <button>Home</button>
+        <button>Youtube</button>
+    </nav>
+
+    <section class="section1">
+        <h1 id="heading">Your Local Time is</h1>
+        <div id="time"></div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
